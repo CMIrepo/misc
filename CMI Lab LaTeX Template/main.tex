@@ -1,0 +1,80 @@
+\documentclass{CMI-beamer}
+
+\title[Hanging Title]{CMI Lab LaTeX Template}
+\subtitle{Subtitle}
+\author{Author}
+\institute[CU]{
+  Department\\
+  Clarkson University
+}
+\date{Date}
+\logo{
+\includegraphics[width=.4in]{img/CMI.png}
+}
+\subject{Human Disease Network}
+
+\begin{document}
+
+\maketitle
+
+\section{Items}
+
+\begin{frame}{Frame}
+\begin{block}{Block}
+\begin{itemize}
+    \item item 1
+    \item item 2
+    \item item 3
+\end{itemize}
+\end{block}
+\begin{itemize}
+    \item item 4
+    \item item 5
+\end{itemize}
+
+\end{frame}
+
+
+\section{Section 2}
+
+\begin{frame}{Image}
+    \begin{figure}
+        \centering
+        \includegraphics[width=2in]{img/CMI.png}
+        \caption{Caption}
+
+    \end{figure}
+\end{frame}
+
+\section{Math Environment}
+
+\begin{frame}{Math Environment}
+
+\begin{block}{Numbered VS Non-numbered Equations}
+\begin{equation}
+    \theta = \int_0^{\infty}(Numbered)dx
+\end{equation}
+\begin{equation*}
+    \theta = \int_0^{\infty}(Non-numbered)dx
+\end{equation*}
+\end{block}
+
+\end{frame}
+
+\section{Example Frame}
+
+\begin{frame}{Infinitesimal Perturbation Analysis (IPA)}
+\begin{itemize}
+    \item IPA is a simulation tool for discrete event systems
+    \item Main idea is that we can make small changes to certain input parameters of a system without changing the sequence in which events occur (Deterministic Similarity)\footnotemark
+    \item This can be used to efficiently estimate the gradient of a surface \footnotemark
+\end{itemize}
+\footnotetext[1]{\tiny Wardi, Y \& Melamed, B. (1996). IPA Gradient Estimation for Loss Measures in Continuous Flow Models.}
+\footnotetext[2]{\tiny Wang et al. Parallel Bayesian Global Optimization of expensive Functions. 2017, https://arxiv.org/abs/1602.05149}
+\begin{figure}
+    \centering
+    \includegraphics[width = 3 in]{img/Perturbation.PNG}
+\end{figure}
+\end{frame}
+
+\end{document}
